@@ -1,0 +1,173 @@
+body {
+    font-family: "forum", sans-serif;
+    color:white;
+    margin:0
+}
+
+
+.navbar {
+    height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #EB8476;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;   
+}
+
+.navbar h1 {
+    font-size: 3rem;
+}
+
+.navbar button {
+    padding:9px 18px;
+    border:1px solid white;
+    border-radius: 20px;
+    color: #EB8476;
+    font-size: 1rem;
+}
+
+.hero_container {
+    background-color: #EB8476;
+    padding:60px
+}
+
+.hero_wrapper, .blog_wrapper, .events_wrapper {
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero_wrapper h1 {
+    font-size: 4rem;
+    font-weight: 200;
+    margin-top: 0;
+}
+
+.hero_wrapper span {
+    font-style: italic;
+}
+
+.mission, .specialties {
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-start
+}
+
+.mission h2, .mission p, .specialties h2, .specialties .skills, .blog_wrapper h2, .blog_wrapper .blogs, .events_wrapper h2, .events_wrapper .events_card{
+    width:50%
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    padding-bottom: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.skills .second_column {
+    margin-left: 80px;
+}
+
+.blog_container {
+    background-color: white;
+    padding: 60px;
+}
+
+.blog_wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color:black
+}
+
+.events_container {
+    background-color: #FBECE1;
+    color: black;
+    padding: 60px
+}
+
+.events_wrapper {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer_container {
+    background-color: black;
+    padding:30px
+    
+}
+
+.first_row img, .second_row img {
+    height:30px;
+    width:30px;
+}
+
+.footer_wrapper {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_wrapper .first_row img, .footer_wrapper .second_row p {
+    margin-right: 10px;
+}
+
+.footer_wrapper .second_row {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width:850px) {
+
+    body {
+        min-width:550px
+    }
+
+    .hero_wrapper h1 {
+        font-size: 3rem;
+    }
+
+    .hero_wrapper, .blog_wrapper, .events_wrapper {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .hero_container .mission, .hero_wrapper .specialties, .blog_wrapper, .events_wrapper {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mission h2, .mission p, .specialties h2, .specialties .skills, .blog_wrapper h2, .blog_wrapper .blogs, .events_wrapper h2, .events_wrapper .events_card{
+    width:100%
+}
+}
+
+
